@@ -1,41 +1,89 @@
-# Site settings
-title:          alana's space
-description:    "taking up a digital lot"
-baseurl:        ""
-url:            "https://alanagoh.github.io"
-
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
-
-# Author
+site: alana's space
 author:
   name:         Alana Goh
   url:          https://alanagoh.github.io
   email:        alanagohpz@gmail.com
+  avatar: 
+title: Colorie
+description: Colorie - Single column blog and portfolio Jekyll theme 
+logo: 
+image: 
+twitter: ronaldsvilcins  
+twitter:
+  username: ronaldsvilcins
+  creator: ronaldsvilcins
+  card: summary
+social:
+  name: Ronalds Vilcins
+  links:
+    - https://twitter.com/#
+    - https://www.dribbble.com/#
+    - https://github.com/#
+    - https://codepen.io/#
+  
+permalink: pretty
 
-# Build settings
-markdown:       kramdown
+disqus:
+  name: "your disqus username" # required
+  noscript: "Please enable JavaScript to view the comments powered by Disqus." # optional
+
+baseurl:             ""
+
 include:
-  - _pages
+  - _redirects
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
 
-# Assets
 sass:
-  sass_dir:     _sass
-  style:        compressed
+  sass_dir:          _sass
+  style:            :compressed
 
-# Gems
 plugins:
-  - jekyll-feed
   - jekyll-paginate
+  - jekyll-gist
   - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
+  - jekyll-sitemap
+  - disqus-for-jekyll
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
-
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
-
-# Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"     
+      
+  - scope:
+      path: "assets/images"
+    values:
+      image: true

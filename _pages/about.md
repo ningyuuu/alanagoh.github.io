@@ -3,20 +3,18 @@ layout: page
 title: About
 ---
 
-## Colorie - Single column blog and portfolio Jekyll theme 
+## My Now Page
 
-Colorful, minimal one-column portfolio/blog theme built for Jekyll. Perfect for your personal website, blog and portfolio.
+Last updated: 6 Sep 2020
 
-### Key features
+### Now Focus
+*Personal*  
+* Get better at **self-love**
+* Practise emotional regulation and complete my stress cycles regularly
+* Build this website
+* Maintain social activities and physical activities - *yoga, gym, dance, running, badminton* 
 
-- seo optimized
-- portfolio/blog/tag pages
-- AAA, 100/100 scores on Lighthouse, Gmetrix and Webpagetest
-- responsive
-- inline css
-- compressed css, html
-- sitemap
-- robots.txt
-- atom feed
-- json feed
-- http security headers
+*Professional*
+* Become a better product person
+* Manage my stress levels while spinning plates
+* Work on confidence 
